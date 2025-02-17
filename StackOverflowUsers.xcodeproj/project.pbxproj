@@ -51,6 +51,10 @@
 		CD6E73202D63AE77009C20BD /* StackOverflowUsers */ = {
 			isa = PBXGroup;
 			children = (
+				CD6E73322D63B09A009C20BD /* API */,
+				CD6E73312D63B095009C20BD /* Models */,
+				CD6E73302D63B08B009C20BD /* ViewModels */,
+				CD6E732F2D63B085009C20BD /* Views */,
 				CD6E73212D63AE77009C20BD /* StackOverflowUsersApp.swift */,
 				CD6E73232D63AE77009C20BD /* ContentView.swift */,
 				CD6E73252D63AE78009C20BD /* Assets.xcassets */,
@@ -65,6 +69,34 @@
 				CD6E73282D63AE78009C20BD /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		CD6E732F2D63B085009C20BD /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		CD6E73302D63B08B009C20BD /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		CD6E73312D63B095009C20BD /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		CD6E73322D63B09A009C20BD /* API */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = API;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
