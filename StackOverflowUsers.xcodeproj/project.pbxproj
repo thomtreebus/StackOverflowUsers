@@ -12,6 +12,8 @@
 		CD6E73262D63AE78009C20BD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD6E73252D63AE78009C20BD /* Assets.xcassets */; };
 		CD6E73292D63AE78009C20BD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD6E73282D63AE78009C20BD /* Preview Assets.xcassets */; };
 		CD6E73342D63B3B4009C20BD /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD6E73332D63B3B4009C20BD /* User.swift */; };
+		CD6E73362D6A11B9009C20BD /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD6E73352D6A11B9009C20BD /* NetworkService.swift */; };
+		CD6E73382D6A125C009C20BD /* UserStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD6E73372D6A125C009C20BD /* UserStore.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +23,8 @@
 		CD6E73252D63AE78009C20BD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CD6E73282D63AE78009C20BD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		CD6E73332D63B3B4009C20BD /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		CD6E73352D6A11B9009C20BD /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		CD6E73372D6A125C009C20BD /* UserStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserStore.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +95,7 @@
 			isa = PBXGroup;
 			children = (
 				CD6E73332D63B3B4009C20BD /* User.swift */,
+				CD6E73372D6A125C009C20BD /* UserStore.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -98,6 +103,7 @@
 		CD6E73322D63B09A009C20BD /* API */ = {
 			isa = PBXGroup;
 			children = (
+				CD6E73352D6A11B9009C20BD /* NetworkService.swift */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -173,7 +179,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				CD6E73242D63AE77009C20BD /* ContentView.swift in Sources */,
+				CD6E73382D6A125C009C20BD /* UserStore.swift in Sources */,
 				CD6E73222D63AE77009C20BD /* StackOverflowUsersApp.swift in Sources */,
+				CD6E73362D6A11B9009C20BD /* NetworkService.swift in Sources */,
 				CD6E73342D63B3B4009C20BD /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
