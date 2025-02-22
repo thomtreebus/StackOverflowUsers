@@ -14,18 +14,7 @@ struct UserListView: View {
                     }
                 } else {
                     List(viewModel.users) { user in
-                        HStack(spacing: 12) {
-                            
-                            VStack(alignment: .leading, spacing: 4) {
-                                Text(user.displayName)
-                                    .font(.headline)
-                                
-                                Text("Reputation: \(user.reputation)")
-                                    .font(.subheadline)
-                                    .foregroundColor(.gray)
-                            }
-                        }
-                        .padding(.vertical, 8)
+                        UserRow(user: user)
                     }
                     .listStyle(PlainListStyle())
                 }
