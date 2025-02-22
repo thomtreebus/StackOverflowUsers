@@ -23,6 +23,10 @@ class UserStore: ObservableObject {
         saveFollowedUsers()
     }
     
+    func isUserFollowed(userId: Int) -> Bool {
+        return followedUsers.contains(userId)
+    }
+    
     private func saveFollowedUsers() {
         UserDefaults.standard.set(Array(followedUsers), forKey: followedUsersKey)
     }

@@ -8,23 +8,27 @@
 
 /* Begin PBXBuildFile section */
 		CD6E73222D63AE77009C20BD /* StackOverflowUsersApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD6E73212D63AE77009C20BD /* StackOverflowUsersApp.swift */; };
-		CD6E73242D63AE77009C20BD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD6E73232D63AE77009C20BD /* ContentView.swift */; };
 		CD6E73262D63AE78009C20BD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD6E73252D63AE78009C20BD /* Assets.xcassets */; };
 		CD6E73292D63AE78009C20BD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD6E73282D63AE78009C20BD /* Preview Assets.xcassets */; };
 		CD6E73342D63B3B4009C20BD /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD6E73332D63B3B4009C20BD /* User.swift */; };
 		CD6E73362D6A11B9009C20BD /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD6E73352D6A11B9009C20BD /* NetworkService.swift */; };
 		CD6E73382D6A125C009C20BD /* UserStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD6E73372D6A125C009C20BD /* UserStore.swift */; };
+		CD6E733A2D6A13D6009C20BD /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD6E73392D6A13D6009C20BD /* ErrorView.swift */; };
+		CD6E733C2D6A145C009C20BD /* UserListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD6E733B2D6A145C009C20BD /* UserListView.swift */; };
+		CD6E733E2D6A1486009C20BD /* UserListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD6E733D2D6A1486009C20BD /* UserListViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		CD6E731E2D63AE77009C20BD /* StackOverflowUsers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StackOverflowUsers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD6E73212D63AE77009C20BD /* StackOverflowUsersApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackOverflowUsersApp.swift; sourceTree = "<group>"; };
-		CD6E73232D63AE77009C20BD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		CD6E73252D63AE78009C20BD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CD6E73282D63AE78009C20BD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		CD6E73332D63B3B4009C20BD /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		CD6E73352D6A11B9009C20BD /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		CD6E73372D6A125C009C20BD /* UserStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserStore.swift; sourceTree = "<group>"; };
+		CD6E73392D6A13D6009C20BD /* ErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorView.swift; sourceTree = "<group>"; };
+		CD6E733B2D6A145C009C20BD /* UserListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListView.swift; sourceTree = "<group>"; };
+		CD6E733D2D6A1486009C20BD /* UserListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,7 +66,6 @@
 				CD6E73302D63B08B009C20BD /* ViewModels */,
 				CD6E732F2D63B085009C20BD /* Views */,
 				CD6E73212D63AE77009C20BD /* StackOverflowUsersApp.swift */,
-				CD6E73232D63AE77009C20BD /* ContentView.swift */,
 				CD6E73252D63AE78009C20BD /* Assets.xcassets */,
 				CD6E73272D63AE78009C20BD /* Preview Content */,
 			);
@@ -80,6 +83,8 @@
 		CD6E732F2D63B085009C20BD /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				CD6E73392D6A13D6009C20BD /* ErrorView.swift */,
+				CD6E733B2D6A145C009C20BD /* UserListView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -87,6 +92,7 @@
 		CD6E73302D63B08B009C20BD /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				CD6E733D2D6A1486009C20BD /* UserListViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -178,7 +184,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CD6E73242D63AE77009C20BD /* ContentView.swift in Sources */,
+				CD6E733A2D6A13D6009C20BD /* ErrorView.swift in Sources */,
+				CD6E733C2D6A145C009C20BD /* UserListView.swift in Sources */,
+				CD6E733E2D6A1486009C20BD /* UserListViewModel.swift in Sources */,
 				CD6E73382D6A125C009C20BD /* UserStore.swift in Sources */,
 				CD6E73222D63AE77009C20BD /* StackOverflowUsersApp.swift in Sources */,
 				CD6E73362D6A11B9009C20BD /* NetworkService.swift in Sources */,
