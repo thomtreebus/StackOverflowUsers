@@ -1,7 +1,13 @@
 import Foundation
 import SwiftUI
 
-class UserStore: ObservableObject {
+protocol UserStoreProtocol {
+    func followUser(userId: Int)
+    func unfollowUser(userId: Int)
+    func isUserFollowed(userId: Int) -> Bool
+}
+
+class UserStore: UserStoreProtocol, ObservableObject {
     private let followedUsersKey = "followedUsers"
     @Published private var followedUsers: Set<Int>
     

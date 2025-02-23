@@ -5,7 +5,7 @@ class UserListViewModel: ObservableObject {
     @Published var error: NetworkError?
     
     private let networkService: NetworkServiceProtocol
-    private let userStore: UserStore
+    private let userStore: UserStoreProtocol
     
     init(networkService: NetworkServiceProtocol = NetworkService(),
          userStore: UserStore = UserStore()) {

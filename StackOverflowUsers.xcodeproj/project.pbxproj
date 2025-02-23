@@ -17,7 +17,19 @@
 		CD6E733C2D6A145C009C20BD /* UserListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD6E733B2D6A145C009C20BD /* UserListView.swift */; };
 		CD6E733E2D6A1486009C20BD /* UserListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD6E733D2D6A1486009C20BD /* UserListViewModel.swift */; };
 		CD6E73402D6A18D9009C20BD /* UserRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD6E733F2D6A18D9009C20BD /* UserRow.swift */; };
+		CD6E73492D6B4648009C20BD /* StackOverflowUsersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD6E73482D6B4648009C20BD /* StackOverflowUsersTests.swift */; };
+		CD6E73502D6B46C8009C20BD /* UserStoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD6E734F2D6B46C8009C20BD /* UserStoreTests.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CD6E734A2D6B4648009C20BD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CD6E73162D63AE77009C20BD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CD6E731D2D63AE77009C20BD;
+			remoteInfo = StackOverflowUsers;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		CD6E731E2D63AE77009C20BD /* StackOverflowUsers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StackOverflowUsers.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -31,10 +43,20 @@
 		CD6E733B2D6A145C009C20BD /* UserListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListView.swift; sourceTree = "<group>"; };
 		CD6E733D2D6A1486009C20BD /* UserListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListViewModel.swift; sourceTree = "<group>"; };
 		CD6E733F2D6A18D9009C20BD /* UserRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRow.swift; sourceTree = "<group>"; };
+		CD6E73462D6B4648009C20BD /* StackOverflowUsersTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StackOverflowUsersTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD6E73482D6B4648009C20BD /* StackOverflowUsersTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackOverflowUsersTests.swift; sourceTree = "<group>"; };
+		CD6E734F2D6B46C8009C20BD /* UserStoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserStoreTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		CD6E731B2D63AE77009C20BD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD6E73432D6B4648009C20BD /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -48,6 +70,7 @@
 			isa = PBXGroup;
 			children = (
 				CD6E73202D63AE77009C20BD /* StackOverflowUsers */,
+				CD6E73472D6B4648009C20BD /* StackOverflowUsersTests */,
 				CD6E731F2D63AE77009C20BD /* Products */,
 			);
 			sourceTree = "<group>";
@@ -56,6 +79,7 @@
 			isa = PBXGroup;
 			children = (
 				CD6E731E2D63AE77009C20BD /* StackOverflowUsers.app */,
+				CD6E73462D6B4648009C20BD /* StackOverflowUsersTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -117,6 +141,15 @@
 			path = API;
 			sourceTree = "<group>";
 		};
+		CD6E73472D6B4648009C20BD /* StackOverflowUsersTests */ = {
+			isa = PBXGroup;
+			children = (
+				CD6E73482D6B4648009C20BD /* StackOverflowUsersTests.swift */,
+				CD6E734F2D6B46C8009C20BD /* UserStoreTests.swift */,
+			);
+			path = StackOverflowUsersTests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -137,6 +170,24 @@
 			productReference = CD6E731E2D63AE77009C20BD /* StackOverflowUsers.app */;
 			productType = "com.apple.product-type.application";
 		};
+		CD6E73452D6B4648009C20BD /* StackOverflowUsersTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CD6E734C2D6B4648009C20BD /* Build configuration list for PBXNativeTarget "StackOverflowUsersTests" */;
+			buildPhases = (
+				CD6E73422D6B4648009C20BD /* Sources */,
+				CD6E73432D6B4648009C20BD /* Frameworks */,
+				CD6E73442D6B4648009C20BD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CD6E734B2D6B4648009C20BD /* PBXTargetDependency */,
+			);
+			name = StackOverflowUsersTests;
+			productName = StackOverflowUsersTests;
+			productReference = CD6E73462D6B4648009C20BD /* StackOverflowUsersTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -149,6 +200,10 @@
 				TargetAttributes = {
 					CD6E731D2D63AE77009C20BD = {
 						CreatedOnToolsVersion = 15.2;
+					};
+					CD6E73452D6B4648009C20BD = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = CD6E731D2D63AE77009C20BD;
 					};
 				};
 			};
@@ -166,6 +221,7 @@
 			projectRoot = "";
 			targets = (
 				CD6E731D2D63AE77009C20BD /* StackOverflowUsers */,
+				CD6E73452D6B4648009C20BD /* StackOverflowUsersTests */,
 			);
 		};
 /* End PBXProject section */
@@ -177,6 +233,13 @@
 			files = (
 				CD6E73292D63AE78009C20BD /* Preview Assets.xcassets in Resources */,
 				CD6E73262D63AE78009C20BD /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD6E73442D6B4648009C20BD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -198,7 +261,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		CD6E73422D6B4648009C20BD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD6E73502D6B46C8009C20BD /* UserStoreTests.swift in Sources */,
+				CD6E73492D6B4648009C20BD /* StackOverflowUsersTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CD6E734B2D6B4648009C20BD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CD6E731D2D63AE77009C20BD /* StackOverflowUsers */;
+			targetProxy = CD6E734A2D6B4648009C20BD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		CD6E732A2D63AE78009C20BD /* Debug */ = {
@@ -376,6 +456,40 @@
 			};
 			name = Release;
 		};
+		CD6E734D2D6B4648009C20BD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.thomtreebus.StackOverflowUsersTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/StackOverflowUsers.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/StackOverflowUsers";
+			};
+			name = Debug;
+		};
+		CD6E734E2D6B4648009C20BD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.thomtreebus.StackOverflowUsersTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/StackOverflowUsers.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/StackOverflowUsers";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -393,6 +507,15 @@
 			buildConfigurations = (
 				CD6E732D2D63AE78009C20BD /* Debug */,
 				CD6E732E2D63AE78009C20BD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CD6E734C2D6B4648009C20BD /* Build configuration list for PBXNativeTarget "StackOverflowUsersTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD6E734D2D6B4648009C20BD /* Debug */,
+				CD6E734E2D6B4648009C20BD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
