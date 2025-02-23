@@ -8,7 +8,7 @@ class UserListViewModel: ObservableObject {
     private let userStore: UserStoreProtocol
     
     init(networkService: NetworkServiceProtocol = NetworkService(),
-         userStore: UserStore = UserStore()) {
+         userStore: UserStoreProtocol = UserStore()) {
         self.networkService = networkService
         self.userStore = userStore
     }

@@ -17,8 +17,9 @@
 		CD6E733C2D6A145C009C20BD /* UserListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD6E733B2D6A145C009C20BD /* UserListView.swift */; };
 		CD6E733E2D6A1486009C20BD /* UserListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD6E733D2D6A1486009C20BD /* UserListViewModel.swift */; };
 		CD6E73402D6A18D9009C20BD /* UserRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD6E733F2D6A18D9009C20BD /* UserRow.swift */; };
-		CD6E73492D6B4648009C20BD /* StackOverflowUsersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD6E73482D6B4648009C20BD /* StackOverflowUsersTests.swift */; };
 		CD6E73502D6B46C8009C20BD /* UserStoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD6E734F2D6B46C8009C20BD /* UserStoreTests.swift */; };
+		CD6E73552D6B4830009C20BD /* UserListViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD6E73542D6B4830009C20BD /* UserListViewModelTests.swift */; };
+		CD6E73572D6B486B009C20BD /* NetworkServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD6E73562D6B486B009C20BD /* NetworkServiceTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,8 +45,9 @@
 		CD6E733D2D6A1486009C20BD /* UserListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListViewModel.swift; sourceTree = "<group>"; };
 		CD6E733F2D6A18D9009C20BD /* UserRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRow.swift; sourceTree = "<group>"; };
 		CD6E73462D6B4648009C20BD /* StackOverflowUsersTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StackOverflowUsersTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		CD6E73482D6B4648009C20BD /* StackOverflowUsersTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackOverflowUsersTests.swift; sourceTree = "<group>"; };
 		CD6E734F2D6B46C8009C20BD /* UserStoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserStoreTests.swift; sourceTree = "<group>"; };
+		CD6E73542D6B4830009C20BD /* UserListViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListViewModelTests.swift; sourceTree = "<group>"; };
+		CD6E73562D6B486B009C20BD /* NetworkServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkServiceTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,8 +146,9 @@
 		CD6E73472D6B4648009C20BD /* StackOverflowUsersTests */ = {
 			isa = PBXGroup;
 			children = (
-				CD6E73482D6B4648009C20BD /* StackOverflowUsersTests.swift */,
 				CD6E734F2D6B46C8009C20BD /* UserStoreTests.swift */,
+				CD6E73542D6B4830009C20BD /* UserListViewModelTests.swift */,
+				CD6E73562D6B486B009C20BD /* NetworkServiceTests.swift */,
 			);
 			path = StackOverflowUsersTests;
 			sourceTree = "<group>";
@@ -265,8 +268,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD6E73552D6B4830009C20BD /* UserListViewModelTests.swift in Sources */,
 				CD6E73502D6B46C8009C20BD /* UserStoreTests.swift in Sources */,
-				CD6E73492D6B4648009C20BD /* StackOverflowUsersTests.swift in Sources */,
+				CD6E73572D6B486B009C20BD /* NetworkServiceTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
