@@ -1,13 +1,22 @@
-# StackOverflow Users
+![Simulator Screenshot - iPhone 15 Pro - 2025-02-23 at 12 33 03](https://github.com/user-attachments/assets/e349aa2e-f98e-4318-90a9-80aa4b2cc33b)# StackOverflow Users
 A simple iOS app that displays a list of the top 20 StackOverflow users, allowing users to follow their favorite StackOverflow contributors. It's built with SwiftUI and follows the MVVM (Model-View-ViewModel) architectural pattern.
 
 ## Features
 
+- When the app is opened, a request is made to the StackOverflow API to fetch the top 20 StackOverflow users.
 - Displays the top 20 StackOverflow users based on reputation
 - Shows user profile image, name, and reputation for each user
 - Allows following/unfollowing users (locally simulated)
 - Persists follow status between app sessions
 - Shows appropriate error messages when network is unavailable
+
+List of Users            |  Error View
+:-------------------------:|:-------------------------:
+![Simulator Screenshot - iPhone 15 Pro - 2025-02-23 at 12 33 03](https://github.com/user-attachments/assets/fa5ac57c-2a7f-4db3-9084-e30c0e72e837) |  ![Simulator Screenshot - iPhone 15 Pro - 2025-02-22 at 14 28 04](https://github.com/user-attachments/assets/5a1bdca3-1d96-4659-a184-21a85e09a827)
+
+
+
+
 
 ## Installation and Usage
 
