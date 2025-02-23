@@ -40,21 +40,21 @@ The app follows the **MVVM (Model-View-ViewModel)** architecture pattern:
 
 ### Key Components
 
-1. **NetworkService**: Responsible for fetching user data from the StackOverflow API
+**NetworkService**: Responsible for fetching user data from the StackOverflow API
    - Uses Swift's modern async/await pattern for cleaner asynchronous code
    - Implements comprehensive error handling
    - Protocol-based design for testability
 
-2. **UserStore**: Manages the local "follow" state for users
+**UserStore**: Manages the local "follow" state for users
    - Implements the `ObservableObject` protocol for SwiftUI integration
    - Persists followed users using UserDefaults
    - Provides methods to follow, unfollow, and check follow status
 
-3. **UserListViewModel**: Central ViewModel that:
+**UserListViewModel**: Central ViewModel that:
    - Coordinates between the NetworkService and UserStore
    - Publishes changes to the view through the @Published property wrapper
 
-4. **SwiftUI Views**:
+**SwiftUI Views**:
    - `UserListView`: Main view that displays the list of users
    - `UserRow`: Displays individual user information and follow button
    - `ErrorView`: Shows error messages with a retry option
