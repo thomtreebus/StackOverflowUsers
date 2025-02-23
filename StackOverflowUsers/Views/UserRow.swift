@@ -11,22 +11,7 @@ struct UserRow: View {
     
     var body: some View {
         HStack(spacing: 12) {
-            
-            ZStack(alignment: .topLeading) {
-                if let image = image {
-                    Image(uiImage: image)
-                        .resizable()
-                        .aspectRatio(contentMode: .fill)
-                        .frame(width: 50, height: 50)
-                        .clipShape(Circle())
-                }
-                
-                if isFollowed {
-                    Circle()
-                        .fill(Color.blue)
-                        .frame(width: 10, height: 10)
-                }
-            }
+            profileImage
             
             VStack(alignment: .leading, spacing: 4) {
                 Text(user.displayName)
@@ -38,24 +23,45 @@ struct UserRow: View {
             }
             
             Spacer()
-
-            Button(action: onFollowTapped) {
-                Text(isFollowed ? "Unfollow" : "Follow")
-                    .font(.system(size: 14, weight: .medium))
-                    .padding(.horizontal, 12)
-                    .padding(.vertical, 6)
-                    .background(isFollowed ? Color.clear : Color.blue)
-                    .foregroundColor(isFollowed ? Color.red : Color.white)
-                    .overlay(
-                        RoundedRectangle(cornerRadius: 8)
-                            .stroke(isFollowed ? Color.red : Color.clear, lineWidth: 1)
-                    )
-                    .cornerRadius(8)
-            }
+            followButton
         }
         .padding(.vertical, 8)
         .onAppear {
             loadProfileImage()
+        }
+    }
+    
+    var profileImage: some View {
+        ZStack(alignment: .topLeading) {
+            if let image = image {
+                Image(uiImage: image)
+                    .resizable()
+                    .aspectRatio(contentMode: .fill)
+                    .frame(width: 50, height: 50)
+                    .clipShape(Circle())
+            }
+            
+            if isFollowed {
+                Circle()
+                    .fill(Color.blue)
+                    .frame(width: 10, height: 10)
+            }
+        }
+    }
+    
+    var followButton: some View {
+        Button(action: onFollowTapped) {
+            Text(isFollowed ? "Unfollow" : "Follow")
+                .font(.system(size: 14, weight: .medium))
+                .padding(.horizontal, 12)
+                .padding(.vertical, 6)
+                .background(isFollowed ? Color.clear : Color.blue)
+                .foregroundColor(isFollowed ? Color.red : Color.white)
+                .overlay(
+                    RoundedRectangle(cornerRadius: 8)
+                        .stroke(isFollowed ? Color.red : Color.clear, lineWidth: 1)
+                )
+                .cornerRadius(8)
         }
     }
     
