@@ -12,12 +12,20 @@ struct UserRow: View {
     var body: some View {
         HStack(spacing: 12) {
             
-            if let image = image {
-                Image(uiImage: image)
-                    .resizable()
-                    .aspectRatio(contentMode: .fill)
-                    .frame(width: 50, height: 50)
-                    .clipShape(Circle())
+            ZStack(alignment: .topLeading) {
+                if let image = image {
+                    Image(uiImage: image)
+                        .resizable()
+                        .aspectRatio(contentMode: .fill)
+                        .frame(width: 50, height: 50)
+                        .clipShape(Circle())
+                }
+                
+                if isFollowed {
+                    Circle()
+                        .fill(Color.blue)
+                        .frame(width: 10, height: 10)
+                }
             }
             
             VStack(alignment: .leading, spacing: 4) {
