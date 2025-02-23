@@ -14,7 +14,11 @@ struct UserListView: View {
                     }
                 } else {
                     List(viewModel.users) { user in
-                        UserRow(user: user)
+                        UserRow(user: user,
+                                isFollowed: viewModel.isUserFollowed(userId: user.userId),
+                                onFollowTapped: {
+                                    viewModel.toggleFollow(for: user.userId)
+                                })
                     }
                     .listStyle(PlainListStyle())
                 }

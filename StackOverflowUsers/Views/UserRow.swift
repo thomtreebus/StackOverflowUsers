@@ -4,6 +4,8 @@ import SwiftUI
 
 struct UserRow: View {
     let user: User
+    let isFollowed: Bool
+    let onFollowTapped: () -> Void
     
     @State private var image: UIImage?
     
@@ -25,6 +27,22 @@ struct UserRow: View {
                 Text("Reputation: \(user.reputation)")
                     .font(.subheadline)
                     .foregroundColor(.gray)
+            }
+            
+            Spacer()
+
+            Button(action: onFollowTapped) {
+                Text(isFollowed ? "Unfollow" : "Follow")
+                    .font(.system(size: 14, weight: .medium))
+                    .padding(.horizontal, 12)
+                    .padding(.vertical, 6)
+                    .background(isFollowed ? Color.clear : Color.blue)
+                    .foregroundColor(isFollowed ? Color.red : Color.white)
+                    .overlay(
+                        RoundedRectangle(cornerRadius: 8)
+                            .stroke(isFollowed ? Color.red : Color.clear, lineWidth: 1)
+                    )
+                    .cornerRadius(8)
             }
         }
         .padding(.vertical, 8)

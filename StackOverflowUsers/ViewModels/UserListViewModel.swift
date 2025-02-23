@@ -33,4 +33,17 @@ class UserListViewModel: ObservableObject {
             }
         }
     }
+
+    func isUserFollowed(userId: Int) -> Bool {
+        return userStore.isUserFollowed(userId: userId)
+    }
+
+    func toggleFollow(for userId: Int) {
+        if isUserFollowed(userId: userId) {
+            userStore.unfollowUser(userId: userId)
+        } else {
+            userStore.followUser(userId: userId)
+        }
+        objectWillChange.send()
+    }
 }
